@@ -20,7 +20,7 @@ body {
 }
 
 /* ======================================================
-   2) BOTTONI (.btn): solid e outline
+   2) BOTTONI (“.btn”): solid e outline
    ====================================================== */
 .btn {
   display: inline-block;
@@ -71,10 +71,11 @@ body {
 }
 
 /* ======================================================
-   4) PAGINA 1  index.html
+   4) PAGINA 1 – index.html
    ====================================================== */
 .banner {
   display: flex;
+  flex-direction: row;
   width: 100%;
   height: clamp(250px, 40vh, 400px);
   margin-top: 1rem;
@@ -83,6 +84,7 @@ body {
   flex: 1;
   background-size: cover;
   background-position: center;
+  min-height: 120px;
 }
 .banner-left { background-image: url('img/esempio1.png'); }
 .banner-center { background-image: url('img/esempio2.png'); position: relative; }
@@ -127,7 +129,7 @@ body {
 .intro-secondary-img { width: 100%; height: auto; border-radius: 6px; }
 
 /* ======================================================
-   5) PAGINA 2  second.html
+   5) PAGINA 2 – second.html
    ====================================================== */
 .services-header {
   background-color: #C0D8B0;
@@ -183,7 +185,7 @@ body {
 }
 
 /* ======================================================
-   6) PAGINA 3  final.html
+   6) PAGINA 3 – final.html
    ====================================================== */
 .recipes {
   display: flex;
@@ -273,7 +275,7 @@ body {
 }
 
 /* ======================================================
-   9) RESPONSIVITA
+   9) RESPONSIVITÀ
    ====================================================== */
 @media (min-width: 901px) and (max-width: 1400px) {
   .intro {
@@ -293,20 +295,6 @@ body {
   }
 }
 @media (max-width: 900px) {
-  /* Banner: overlay spostata in alto a destra */
-  .banner {
-    flex-direction: column;
-    height: auto;
-  }
-  .banner-item { height: 200px; }
-  .banner-center .overlay {
-    top: 1rem;
-    right: 1rem;
-    left: auto;
-    transform: none;
-    max-width: 90%;
-  }
-
   /* Intro: due colonne → singola colonna */
   .intro { flex-direction: column; }
 
