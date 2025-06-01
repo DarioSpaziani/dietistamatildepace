@@ -1,4 +1,7 @@
-*{
+/* ======================================================
+   1) RESET E TIPOGRAFIA DI BASE
+   ====================================================== */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -270,10 +273,9 @@ body {
 }
 
 /* ======================================================
-   9) RESPONSIVITÀ
+   9) RESPONSIVITA
    ====================================================== */
 @media (min-width: 901px) and (max-width: 1400px) {
-  /* Riduciamo gap e padding su schermi medi-piccoli */
   .intro {
     padding: 2rem 1rem;
     gap: 1rem;
@@ -290,14 +292,20 @@ body {
     gap: 1rem;
   }
 }
-
 @media (max-width: 900px) {
-  /* Banner: tre colonne → singola colonna */
+  /* Banner: overlay spostata in alto a destra */
   .banner {
     flex-direction: column;
     height: auto;
   }
   .banner-item { height: 200px; }
+  .banner-center .overlay {
+    top: 1rem;
+    right: 1rem;
+    left: auto;
+    transform: none;
+    max-width: 90%;
+  }
 
   /* Intro: due colonne → singola colonna */
   .intro { flex-direction: column; }
@@ -314,40 +322,33 @@ body {
   .location-section { flex-direction: column; }
   .location-left, .location-right { flex: 1 1 100%; }
 }
-
 @media (max-width: 480px) {
-  /* Riduciamo ulteriormente font-size e padding per smartphone XS */
   .header { padding: 1rem; gap: 0.5rem; }
   .header-title h1 { font-size: 1.5rem; }
   .header-title p { font-size: 0.9rem; }
-
   .intro {
     padding: 1.5rem 1rem;
     gap: 0.75rem;
   }
   .intro-right h2 { font-size: 1.4rem; }
   .intro-right p { font-size: 0.9rem; }
-
   .service-info {
     padding: 1rem 0.5rem;
     gap: 0.5rem;
   }
   .service-all { margin-top: 1rem; }
-
   .recipes {
     padding: 1.5rem 1rem;
     gap: 0.75rem;
   }
   .recipes-right h2 { font-size: 1.4rem; }
   .recipes-right p { font-size: 0.9rem; }
-
   .position-icon { width: 30px; }
   .position-text h2 { font-size: 1.2rem; }
   .position-text p { font-size: 0.9rem; }
   .icon-item img { width: 40px; }
   .icon-item span { font-size: 0.85rem; }
 }
-
 @media (min-width: 2561px) {
   body { max-width: 2560px; width: 90%; }
 }
