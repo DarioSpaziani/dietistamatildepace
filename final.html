@@ -2,35 +2,50 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prenota la tua visita</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ricette e consigli</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header dark">
-    <div class="logo">
-      <img src="img/logo.png" alt="Logo Matilde Pace">
+  <!-- HEADER IDENTICO ALLE ALTRE PAGINE -->
+  <header class="header">
+    <img src="img/logo.png" alt="Logo Matilde Pace" class="logo">
+    <div class="header-title">
+      <h1>Matilde Pace</h1>
+      <p>Dietista</p>
     </div>
-    <div class="spacer"></div>
-    <nav class="top-nav">
-      <a class="btn" href="index.html">Home</a>
-      <a class="btn" href="second.html">Scopri di più</a>
-    </nav>
   </header>
 
-  <main class="booking-page">
-    <h2 class="booking-title">Prenota la tua <span class="accent">visita</span>.</h2>
-    <p class="booking-subtitle">Clicca un’icona per contattarmi.</p>
-    <div class="contact-icons">
-      <a href="mailto:tuoindirizzo@gmail.com"><img src="img/icon-gmail.png" alt="Email"></a>
-      <a href="https://wa.me/3472530342"><img src="img/icon-whatsapp.png" alt="WhatsApp"></a>
-      <a href="https://www.instagram.com/dietista_matildepace/"><img src="img/icon-instagram.png" alt="Instagram"></a>
+  <!-- SEZIONE “Ricette e consigli”: due colonne con sfondo bianco -->
+  <section class="recipes">
+    <!-- Colonna sinistra: immagine (esempio9.png) -->
+    <div class="recipes-left">
+      <img src="img/esempio9.png" alt="Immagine Ricette e consigli" class="recipes-img">
     </div>
-    <footer class="location">
-      <img src="img/icon-location.png" alt="Posizione">
-      <span>Torino</span>
-    </footer>
-  </main>
+
+    <!-- Colonna destra: testo, bottone e blog-card -->
+    <div class="recipes-right">
+      <h2>Ricette e consigli</h2>
+      <p>
+        Questo è un paragrafo: clicca qui per modificare e aggiungere
+        il tuo testo. È molto semplice, per farlo basta cliccare  
+        su “Modifica testo” oppure cliccare due volte qui.
+      </p>
+      <a href="#" class="btn outline">Leggi tutto</a>
+
+      <!-- Blog-card -->
+      <div class="blog-card">
+        <img src="img/esempio10.png" alt="Articolo nutrizione professionale" class="blog-img">
+        <h4>Nutrizione professionale: consulenza dietetica di alta qualità</h4>
+        <p class="blog-meta">Dario Spaziani • 5 giorni fa • Tempo di lettura: 1 min</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER PULITO (su sfondo verde scuro) -->
+  <footer class="footer">
+    <!-- Se volessi aggiungere link o copyright, fallo qui -->
+  </footer>
 </body>
 </html>

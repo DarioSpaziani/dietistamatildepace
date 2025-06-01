@@ -1,0 +1,501 @@
+/* ======================================================
+   1) RESET E TIPOGRAFIA GENERALE
+   ====================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ======================================================
+   2) BOTTONI “.btn”: solid e outline
+   ====================================================== */
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+/* Bottone con sfondo pieno (verde scuro) */
+.btn.solid {
+  background-color: #184B35;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+}
+.btn.solid:hover {
+  background-color: #143F2C;
+}
+
+/* Bottone outline (cornice e testo scuro) */
+.btn.outline {
+  background: none;
+  border: 1px solid #333;
+  color: #333;
+  padding: 10px 20px;
+}
+.btn.outline:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* ======================================================
+   3) HEADER (comune a tutte le pagine)
+   ====================================================== */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+.header .logo {
+  width: 50px;
+  margin-right: 15px;
+}
+.header-title h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.header-title p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ======================================================
+   4) PAGINA 1 – index.html
+   ====================================================== */
+
+/* 4.1 Banner a tre “colonne” con vere foto */
+.banner {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  margin-top: 10px;
+}
+
+/* Ogni “banner-item” occupa 1/3 e mostra una vera immagine di sfondo */
+.banner-item {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+/* Inserisci le vere immagini: esempio1, esempio2, esempio3 */
+.banner-left {
+  background-image: url('img/esempio1.png');
+}
+.banner-center {
+  background-image: url('img/esempio2.png');
+  position: relative;
+}
+.banner-right {
+  background-image: url('img/esempio3.png');
+}
+
+/* Overlay semitrasparente sul centro */
+.banner-center .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 25px 30px;
+  text-align: center;
+  border-radius: 6px;
+  max-width: 280px;
+}
+.banner-center .overlay blockquote {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.banner-center .overlay .btn {
+  font-size: 0.95rem;
+}
+
+/* 4.2 Sezione introduttiva “Piacere, sono Matilde” */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  gap: 30px;
+}
+
+/* Colonna sinistra: vera foto, esempio4.png */
+.intro-left {
+  flex: 1 1 350px;
+}
+.intro-left .intro-main-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Colonna destra: testo e immagine secondaria */
+.intro-right {
+  flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.intro-right h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.intro-right p {
+  font-size: 1rem;
+  color: #444;
+}
+.intro-right .btn.outline {
+  width: 120px;
+  text-align: center;
+}
+
+/* Immagine secondaria in basso a destra (esempio5.png) */
+.intro-secondary-img-wrapper {
+  margin-top: 20px;
+}
+.intro-secondary-img-wrapper .intro-secondary-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* ======================================================
+   5) PAGINA 2 – second.html
+   ====================================================== */
+
+/* 5.1 Sezione servizi – Sfondi verde tenue (solo CSS) */
+.services-header {
+  background-color: #C0D8B0; /* verde chiaro */
+  text-align: center;
+  padding: 50px 20px;
+}
+.services-header h2 {
+  font-size: 2.2rem;
+  color: #1F3D20; /* verde scuro */
+}
+
+/* 5.2 Elenco servizi: tre card bianche su sfondo verde tenue */
+.services-list {
+  background-color: #C0D8B0;
+  padding: 20px 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Ogni “service-item” è una riga con card bianca */
+.service-item {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Colonna sinistra: dettagli servizio */
+.service-info {
+  flex: 1 1 300px;
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.service-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #1F3D20;
+}
+.service-info p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.4;
+}
+.service-info .btn.solid {
+  width: fit-content;
+}
+
+/* Colonna destra: immagine servizio (esempio6,7,8.png) */
+.service-image {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.service-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Pulsante “Tutte le sessioni” */
+.service-all {
+  text-align: center;
+  margin-top: 20px;
+}
+.service-all .btn.outline {
+  border-color: #1F3D20;
+  color: #1F3D20;
+}
+
+/* ======================================================
+   6) PAGINA 3 – final.html
+   ====================================================== */
+
+/* 6.1 Sezione “Ricette e consigli”: due colonne su sfondo bianco */
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  gap: 30px;
+}
+
+/* Colonna sinistra: vera immagine (esempio9.png) */
+.recipes-left {
+  flex: 1 1 400px;
+}
+.recipes-left .recipes-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Colonna destra: titolo, testo, bottone e blog-card */
+.recipes-right {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.recipes-right h2 {
+  font-size: 1.8rem;
+  color: #1F3D20;
+}
+.recipes-right p {
+  font-size: 1rem;
+  color: #555;
+}
+.recipes-right .btn.outline {
+  width: 120px;
+  text-align: center;
+  border-color: #1F3D20;
+  color: #1F3D20;
+}
+
+/* Blog-card: immagine (esempio10.png) + titolo + metadati */
+.blog-card {
+  margin-top: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.blog-card .blog-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.blog-card h4 {
+  font-size: 1.2rem;
+  margin: 15px 20px 10px;
+  color: #1F3D20;
+}
+.blog-card .blog-meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0 20px 15px;
+}
+
+/* 6.2 Footer su sfondo verde scuro */
+.footer {
+  background-color: #1F3D20;
+  height: 80px;
+  margin-top: 40px;
+}
+
+/* ======================================================
+   7) RESPONSIVITÀ
+   ====================================================== */
+@media (max-width: 900px) {
+  /* 7.1 Banner (index.html): da tre colonne a colonna singola */
+  .banner {
+    flex-direction: column;
+    height: auto;
+  }
+  .banner-item {
+    height: 200px;
+  }
+
+  /* 7.2 Intro (index.html): da due colonne a colonna singola */
+  .intro {
+    flex-direction: column;
+  }
+
+  /* 7.3 Servizi (second.html): ogni service-item in colonna */
+  .service-item {
+    flex-direction: column;
+  }
+  .service-image, .service-info {
+    flex: 1 1 100%;
+  }
+
+  /* 7.4 Ricette (final.html): due colonne in colonna singola */
+  .recipes {
+    flex-direction: column;
+  }
+  .recipes-left, .recipes-right {
+    flex: 1 1 100%;
+  }
+}
+
+/* ======================================================
+   8) LIMITA LARGHEZZA SU SCHERMI MOLTO GRANDI
+   ====================================================== */
+@media (min-width: 1400px) {
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+.recipes-gallery {
+  display: flex;
+  gap: clamp(0.5rem, 1vw, 1rem);
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recipes-gallery img {
+  flex: 1 1 calc(33.333% - 1rem);
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.recipes-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsività: su mobile le immagini diventano 100% larghezza (una sotto l’altra) */
+@media (max-width: 600px) {
+  .recipes-gallery img {
+    flex: 1 1 100%;
+  }
+}
+
+.location-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+/* Colonna sinistra: immagine grande */
+.location-left {
+  flex: 1 1 500px;
+}
+.location-left .location-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Colonna destra: posizione + contatti */
+.location-right {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+/* Blocco icona posizione + testo */
+.position-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.position-icon {
+  width: 40px;
+  height: auto;
+}
+.position-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  color: #1F3D20;
+}
+.position-text p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Tre icone in orizzontale con etichette */
+.contact-icons-three {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.icon-item {
+  flex: 1 1 calc(33.333% - 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.icon-item img {
+  width: 60px;
+  height: auto;
+}
+.icon-item span {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Per mobile: colonna unica e icone strettamente impilate */
+@media (max-width: 768px) {
+  .location-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .location-left, .location-right {
+    flex: 1 1 100%;
+  }
+  .position-block {
+    justify-content: flex-start;
+  }
+  .contact-icons-three {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .icon-item {
+    flex: 1 1 calc(33.333% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .position-icon {
+    width: 30px;
+  }
+  .position-text h2 {
+    font-size: 1.2rem;
+  }
+  .position-text p {
+    font-size: 0.9rem;
+  }
+  .icon-item img {
+    width: 50px;
+  }
+  .icon-item span {
+    font-size: 0.9rem;
+  }
+}

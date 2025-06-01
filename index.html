@@ -1,65 +1,165 @@
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matilde Pace</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="logo"><img src="img/logo2.png" alt="Logo Matilde Pace"></div>
-    <h1 class="site-title">Matilde Pace</h1>
-    <nav class="top-nav">
-      <a href="#home" class="btn">Home</a>
-      <a href="#concept" class="btn">Scopri di più</a>
-      <a href="#final" class="btn">Contatti</a>
-    </nav>
+  <!-- HEADER CON LOGO E TITOLO -->
+  <header class="header">
+    <img src="img/logo2.png" alt="Logo Matilde Pace" class="logo">
+    <div class="header-title">
+      <h1>Matilde Pace</h1>
+      <p>Dietista</p>
+    </div>
   </header>
 
-  <main>
-    <!-- SEZIONE 1: Home -->
-    <section id="home" class="panel home">
-      <div class="hero">
-        <div class="hero-left">
-          <div class="photo-frame"><img src="img/profile.png" alt="Foto del profilo"></div>
+  <!-- BANNER A TRE “COLONNE” (solo immagini reali, non colori) -->
+  <section class="banner">
+    <!-- Banner sinistro: carichiamo la vera foto: esempio1.png -->
+    <div class="banner-item banner-left"></div>
+
+    <!-- Banner centrale: vera foto (esempio2.png) + overlay semitrasparente bianco -->
+    <div class="banner-item banner-center">
+      <div class="overlay">
+        <blockquote>“Un'alimentazione sana ci aiuta a limitare l'uso di farmaci”</blockquote>
+      </div>
+    </div>
+
+    <!-- Banner destro: vera foto (esempio3.png) -->
+    <div class="banner-item banner-right"></div>
+  </section>
+
+  <!-- SEZIONE INTRO “Piacere, sono Matilde” -->
+  <section class="intro">
+    <!-- Colonna sinistra: vero ritratto (esempio4.png) -->
+    <div class="intro-left">
+      <img src="img/fotoprofilo.png" alt="Foto Matilde" class="intro-main-img">
+    </div>
+    <!-- Colonna destra: testo + bottone + immagine secondaria (esempio5.png) -->
+    <div class="intro-right">
+      <h2>Piacere, sono Matilde</h2>
+      <p>
+        Qui puoi scrivere tutto quello che vuoi su di te, la tua formazione, le tue passioni e il tuo approccio alla dietistica.
+        
+      </p>
+      <div class="intro-secondary-img-wrapper">
+        
+      </div>
+    </div>
+  </section>
+</body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulenza dietistica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER IDENTICO A index.html -->
+  <header class="header">
+    <img src="img/logo2.png" alt="Logo Matilde Pace" class="logo">
+    <div class="header-title">
+      <h1>Matilde Pace</h1>
+      <p>Dietista</p>
+    </div>
+  </header>
+
+  <!-- SEZIONE SERVIZI SU SFONDO VERDE CHIARO (solo colorazione CSS) -->
+  <section class="services-header">
+    <h2>Consulenza dietistica</h2>
+  </section>
+
+  <!-- ELENCO SERVIZI: tre card su sfondo verde -->
+  <section class="services-list">
+    <!-- Servizio 1 -->
+    <div class="service-item">
+      <div class="service-info">
+        <h3>Consulenza Dietetica Personale</h3>
+        <p>1 ora<br>80 EUR</p>
+      </div>
+      <div class="service-image">
+        <img src="img/esempio6.png" alt="Consulenza personale">
+      </div>
+    </div>
+
+    <!-- Servizio 2 -->
+    <div class="service-item">
+      <div class="service-info">
+        <h3>Consulenza Alimentare Cucina</h3>
+        <p>45 minuti<br>50 EUR</p>
+      </div>
+      <div class="service-image">
+        <img src="img/esempio7.png" alt="Consulenza cucina">
+      </div>
+    </div>  
+
+    <!-- Pulsante “Tutte le sessioni” -->
+    <div class="service-all">
+    </div>
+  </section>
+</body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dove trovarmi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER IDENTICO ALLE ALTRE PAGINE -->
+  <header class="header">
+    <img src="img/logo2.png" alt="Logo Matilde Pace" class="logo">
+    <div class="header-title">
+      <h1>Matilde Pace</h1>
+      <p>Dietista</p>
+    </div>
+  </header>
+
+  <!-- SEZIONE "Dove trovarmi" -->
+  <section class="location-section">
+    <!-- Colonna sinistra: grande immagine (esempio.png) -->
+    <div class="location-left">
+      <img src="img/position.png" alt="Sfondo Dove trovarmi" class="location-img">
+    </div>
+
+    <!-- Colonna destra: icona posizione + testo + icone contatti -->
+    <div class="location-right">
+      <!-- Icona piccola "position.png" con testo "Torino" e indirizzo sotto -->
+      <div class="position-block">
+        
+        <div class="position-text">
+          <h2>Torino</h2>
+          <p>Via dei Bersaglieri 22, Chiavasso TO, 10125</p>
         </div>
-        <div class="hero-right">
-          <h2>Mi presento:</h2>
-          <p>Sono una dietista e mi occupo dell'elaborazione di percorsi nutrizionali personalizzati in relazione alle caratteristiche fisiopatologiche, alle esigenze e ai gusti della persona.</p>
-          <a class="btn big-btn" href="#booking">Prenota</a>
+      </div>
+
+      <!-- Tre icone in orizzontale con etichette sotto ciascuna -->
+      <div class="contact-icons-three">
+        <div class="icon-item">
+        <a href="https://www.instagram.com/dietista_matildepace/"><img src="img/icon-instagram.png" alt="Instagram"></a>          <span>Instagram</span>
+        </div>
+        <div class="icon-item">
+          <a href="mailto:dario.spaziani94@gmail.com"><img src="img/icon-gmail.png" alt="Email"></a>
+          <span>Gmail</span>
+        </div>
+        <div class="icon-item">
+          <a href="https://wa.me/3472530342"><img src="img/icon-whatsapp.png" alt="WhatsApp"></a>
+          <span>WhatsApp</span>
         </div>
       </div>
-      <div class="education">
-        <div class="edu-item"><ul><li>Laurea triennale in Dietistica presso l'Università di Ferrara</li></ul></div>
-        <div class="edu-item"><ul><li>Laurea magistrale in Scienze dell'alimentazione presso l'Università di Firenze</li></ul></div>
-      </div>
+    </div>
+  </section>
 
-
-    <!-- SEZIONE 2: Concetto dieta -->
-    
-      <h2 class="concept-title">Il mio concetto di dieta</h2>
-      <div class="concept-grid">
-        <div class="icon-box"><img src="img/icon-ricette.svg" alt="Ricette"><span>Ricette</span></div>
-        <div class="text-box"><p>Percorso nutrizionale dinamico, flessibile e personalizzato</p></div>
-        <div class="icon-box"><img src="img/icon-varieta.svg" alt="Varietà"><span>Varietà</span></div>
-        <div class="text-box"><p>Obiettivi concreti e condivisi di volta in volta</p></div>
-        <div class="icon-box bottom"><img src="img/icon-qualita.svg" alt="Qualità"><span>Qualità</span></div>
-        <div class="text-box"><p>Autonomia e consapevolezza nell’alimentazione</p></div>
-      </div>
-
-
-    <!-- SEZIONE 3: Prenota -->
-    <section id="final" class="panel booking">
-      <h2 class="booking-title">Prenota la tua <span class="accent">visita</span>.</h2>
-      <p class="booking-subtitle">Clicca un'icona per contattarmi.</p>
-      <div class="contact-icons">
-        <a href="mailto:dario.spaziani94@gmail.com"><img src="img/icon-gmail.png" alt="Email"></a>
-        <a href="https://wa.me/3793012478"><img src="img/icon-whatsapp.png" alt="WhatsApp"></a>
-        <a href="https://instagram.com/dietista_matildepace"><img src="img/icon-instagram.png" alt="Instagram"></a>
-      </div>
-      <footer class="location"><img src="img/icon-location.svg" alt="Posizione"><span>Torino</span></footer>
-    </section>
-  </main>
+  <!-- FOOTER SU SFONDO VERDE SCURO -->
+  <footer class="footer">
+    <!-- Spazio per eventuali contenuti del footer -->
+  </footer>
 </body>
 </html>

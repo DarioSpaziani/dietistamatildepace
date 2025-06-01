@@ -2,48 +2,68 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il mio concetto di dieta</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulenza dietistica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="logo">
-      <img src="img/logo2.png" alt="Logo Matilde Pace">
+  <!-- HEADER IDENTICO A index.html -->
+  <header class="header">
+    <img src="img/logo.png" alt="Logo Matilde Pace" class="logo">
+    <div class="header-title">
+      <h1>Matilde Pace</h1>
+      <p>Dietista</p>
     </div>
-    <div class="spacer"></div>
-    <nav class="top-nav">
-      <a class="btn" href="index.html">Home</a>
-      <a class="btn" href="final.html">Prenota</a>
-    </nav>
   </header>
 
-  <main class="concept-page">
-    <h2 class="concept-title">Il mio concetto di dieta</h2>
-    <div class="concept-grid">
-      <div class="icon-box">
-        <img src="img/icon-ricette.svg" alt="Ricette">
-        <span>Ricette</span>
+  <!-- SEZIONE SERVIZI SU SFONDO VERDE CHIARO (solo colorazione CSS) -->
+  <section class="services-header">
+    <h2>Consulenza dietistica</h2>
+  </section>
+
+  <!-- ELENCO SERVIZI: tre card su sfondo verde -->
+  <section class="services-list">
+    <!-- Servizio 1 -->
+    <div class="service-item">
+      <div class="service-info">
+        <h3>Consulenza Dietetica Personale</h3>
+        <p>1 ora<br>80 USD</p>
+        <a href="final.html" class="btn solid">Prenota</a>
       </div>
-      <div class="text-box">
-        <p>Il mio metodo opta per l'elaborazione di un percorso nutrizionale dinamico, flessibile e personalizzato</p>
-      </div>
-      <div class="icon-box">
-        <img src="img/icon-varieta.svg" alt="Varietà">
-        <span>Varietà</span>
-      </div>
-      <div class="text-box">
-        <p>Definizione di obiettivi concreti, decisi e condivisi di volta in volta con la persona</p>
-      </div>
-      <div class="icon-box bottom">
-        <img src="img/icon-qualita.svg" alt="Qualità">
-        <span>Qualità</span>
-      </div>
-      <div class="text-box">
-        <p>Impara a gestire l'alimentazione con consapevolezza e autonomia</p>
+      <div class="service-image">
+        <img src="img/esempio6.png" alt="Consulenza personale">
       </div>
     </div>
-  </main>
+
+    <!-- Servizio 2 -->
+    <div class="service-item">
+      <div class="service-info">
+        <h3>Consulenza Alimentare Cucina</h3>
+        <p>45 minuti<br>50 USD</p>
+        <a href="final.html" class="btn solid">Prenota</a>
+      </div>
+      <div class="service-image">
+        <img src="img/esempio7.png" alt="Consulenza cucina">
+      </div>
+    </div>
+
+    <!-- Servizio 3 -->
+    <div class="service-item">
+      <div class="service-info">
+        <h3>Piano Nutrizionale Personalizzato</h3>
+        <p>Terminato<br>120 USD</p>
+        <a href="#" class="btn outline">Vedi corso</a>
+      </div>
+      <div class="service-image">
+        <img src="img/esempio8.png" alt="Piano nutrizionale">
+      </div>
+    </div>
+
+    <!-- Pulsante “Tutte le sessioni” -->
+    <div class="service-all">
+      <a href="final.html" class="btn outline">Tutte le sessioni</a>
+    </div>
+  </section>
 </body>
 </html>
