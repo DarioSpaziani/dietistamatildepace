@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #d7e7f7;
+  color: #333;
+}
+
+header.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #d7e7f7;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+header.site-header .logo img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.site-title {
+  flex: 1 1 200px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.top-nav {
+  display: flex;
+  gap: 10px;
+  flex: 1 1 200px;
+  justify-content: flex-end;
+}
+
+.top-nav .btn {
+  background-color: #E0E0E0;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+main {
+  flex: 1 1 auto;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  color: #000;
+}
+
+.panel {
+  height: 100vh;
+  padding-top: 80px;
+  scroll-snap-align: start;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.photo-frame {
+  display: inline-block;
+  border: 15px solid #fff;
+}
+
+.hero-left img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+}
+
+.hero-right h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-right p {
+  max-width: 500px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn.big-btn {
+  display: inline-block;
+  background-color: #548CBC;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.education {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.edu-item {
+  flex: 1 1 300px;
+}
+
+.edu-item li {
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.edu-item li::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.concept-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.concept-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0;
+}
+
+.icon-box {
+  position: relative;
+  text-align: center;
+}
+.icon-box img {
+  background-color: #3064db;
+  padding: 50px;          /* regola lo spazio interno per avere un quadrato dietro */
+  display: inline-block;
+  border-radius: 4px;     /* opzionale: arrotonda leggermente gli angoli */
+  object-fit: contain;      /* assicura che l’immagine rimanga centrata e non si deformi */
+}
+.icon-box span {
+  display: block;
+  margin-top: 10px;       /* separazione fra icona e testo */
+  color: #000;            /* lascia il testo in nero o cambialo se vuoi */
+}
+
+.icon-box.bottom {
+  grid-column: 1 / 2;
+  color: #71a3c1;
+}
+
+
+
+.text-box p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.booking {
+  margin: 100px 100px;
+  position: relative;
+  padding: 200px 20px;
+  text-align: center;
+  background-color: #71a3c1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.booking-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.booking-title .accent {
+  color: #55EFC4;
+}
+
+.booking-subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 300px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.contact-icons img {
+  width: 100px;
+  height: auto;
+}
+
+.location {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.location img {
+  width: 36px;
+  height: auto;
+}
+
+.location span {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .top-nav,
+  .hero,
+  .education,
+  .concept-grid,
+  .contact-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .concept-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-title {
+    font-size: 2rem;
+  }
+
+  .booking-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .contact-icons img {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  main {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .hero-left img {
+    max-width: 400px;
+  }
+
+  .contact-icons img {
+    width: 120px;
+  }
+
+  .booking-title {
+    font-size: 4rem;
+  }
+
+  .booking-subtitle {
+    font-size: 2rem;
+  }
+}
