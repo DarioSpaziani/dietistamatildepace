@@ -102,18 +102,18 @@ body {
    5) PAGINA 2 – second.html
    ====================================================== */
 
-/* 5.1 Sezione servizi – Sfondi verde tenue (solo CSS) */
+/* 5.1 Sezione servizi */
 .services-header {
-  background-color: #C0D8B0; /* verde chiaro */
+  background-color: #C0D8B0;
   text-align: center;
   padding: 50px 20px;
 }
 .services-header h2 {
   font-size: 2.2rem;
-  color: #1F3D20; /* verde scuro */
+  color: #1F3D20;
 }
 
-/* 5.2 Elenco servizi: tre card bianche su sfondo verde tenue */
+/* 5.2 Elenco servizi: */
 .services-list {
   background-color: #C0D8B0;
   padding: 20px 40px 60px;
@@ -122,7 +122,6 @@ body {
   gap: 30px;
 }
 
-/* Ogni “service-item” è una riga con card bianca */
 .service-item {
   background-color: #fff;
   display: flex;
@@ -131,7 +130,6 @@ body {
   overflow: hidden;
 }
 
-/* Colonna sinistra: dettagli servizio */
 .service-info {
   flex: 1 1 300px;
   padding: 25px 30px;
@@ -154,7 +152,6 @@ body {
   width: fit-content;
 }
 
-/* Colonna destra: immagine servizio (esempio6,7,8.png) */
 .service-image {
   flex: 1 1 300px;
   display: flex;
@@ -168,29 +165,13 @@ body {
   object-fit: cover;
 }
 
-/* Pulsante “Tutte le sessioni” */
-.service-all {
-  text-align: center;
-  margin-top: 20px;
-}
-.service-all .btn.outline {
-  border-color: #1F3D20;
-  color: #1F3D20;
-}
 
 /* ======================================================
    6) PAGINA 3 – final.html
    ====================================================== */
 
-/* 6.1 Sezione “Ricette e consigli”: due colonne su sfondo bianco */
-.recipes {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 60px 40px;
-  gap: 30px;
-}
 
-/* Colonna sinistra: vera immagine (esempio9.png) */
+/* Colonna sinistra */
 .recipes-left {
   flex: 1 1 400px;
 }
@@ -278,7 +259,7 @@ body {
    ====================================================== */
 @media (min-width: 1400px) {
   body {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
   }
 }
