@@ -20,7 +20,7 @@ body {
 }
 
 /* ======================================================
-   2) BOTTONI (“.btn”): solid e outline
+   2) BOTTONI (.btn): solid e outline
    ====================================================== */
 .btn {
   display: inline-block;
@@ -71,7 +71,7 @@ body {
 }
 
 /* ======================================================
-   4) PAGINA 1 – index.html
+   4) PAGINA 1 index.html
    ====================================================== */
 .banner {
   display: flex;
@@ -129,7 +129,7 @@ body {
 .intro-secondary-img { width: 100%; height: auto; border-radius: 6px; }
 
 /* ======================================================
-   5) PAGINA 2 – second.html
+   5) PAGINA 2  second.html
    ====================================================== */
 .services-header {
   background-color: #C0D8B0;
@@ -172,8 +172,9 @@ body {
   justify-content: center;
   overflow: hidden;
 }
-.service-image img {
-  width: 100%; height: auto; object-fit: cover;
+@media (min-width:1200px){
+  .service-image img {
+  max-width: 80%; margin : 0 auto;
   transition: transform 0.3s ease;
 }
 .service-image img:hover { transform: scale(1.03); }
@@ -185,7 +186,7 @@ body {
 }
 
 /* ======================================================
-   6) PAGINA 3 – final.html
+   6) PAGINA 3  final.html
    ====================================================== */
 .recipes {
   display: flex;
@@ -223,12 +224,18 @@ body {
 /* ======================================================
    7) "DOVE TROVARMI"
    ====================================================== */
-.location-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 3rem 1rem;
-  background-color: #fff;
+@media (min-width:1200px){
+  .location-section 
+  {
+    margin-left: 25%;
+    max-width: 50%;
+    min-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background-color: #fff;
+  }
 }
 .location-left, .location-right { flex: 1 1 100%; }
 .location-left .location-img { width: 100%; height: auto; border-radius: 6px; }
@@ -275,7 +282,7 @@ body {
 }
 
 /* ======================================================
-   9) RESPONSIVITÀ
+   9) RESPONSIVITA
    ====================================================== */
 @media (min-width: 901px) and (max-width: 1400px) {
   .intro {
@@ -295,10 +302,10 @@ body {
   }
 }
 @media (max-width: 900px) {
-  /* Intro: due colonne → singola colonna */
+  /* Intro: due colonne -> singola colonna */
   .intro { flex-direction: column; }
 
-  /* Servizi: ogni service-item → colonna singola */
+  /* Servizi: ogni service-item -> colonna singola */
   .service-item { flex-direction: column; }
   .service-info, .service-image { flex: 1 1 100%; }
 
@@ -306,7 +313,7 @@ body {
   .recipes { flex-direction: column; }
   .recipes-left, .recipes-right { flex: 1 1 100%; }
 
-  /* Dove trovarmi: due colonne → singola colonna */
+  /* Dove trovarmi: due colonne -> singola colonna */
   .location-section { flex-direction: column; }
   .location-left, .location-right { flex: 1 1 100%; }
 }
