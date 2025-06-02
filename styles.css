@@ -20,7 +20,7 @@ body {
 }
 
 /* ======================================================
-   2) BOTTONI (“.btn”): solid e outline
+   2) BOTTONI : solid e outline
    ====================================================== */
 .btn {
   display: inline-block;
@@ -49,7 +49,7 @@ body {
 }
 
 /* ======================================================
-   3) HEADER (comune a tutte le pagine)
+   3) HEADER
    ====================================================== */
 .header {
   display: flex;
@@ -71,7 +71,7 @@ body {
 }
 
 /* ======================================================
-   4) PAGINA 1 – index.html
+   4) PAGINA 1 - index.html
    ====================================================== */
 .banner {
   display: flex;
@@ -86,9 +86,9 @@ body {
   background-position: center;
   min-height: 120px;
 }
-.banner-left { background-image: url('img/esempio1.png'); }
-.banner-center { background-image: url('img/esempio2.png'); position: relative; }
-.banner-right { background-image: url('img/esempio3.png'); }
+.banner-left { background-image: url('img/banner1.png'); }
+.banner-center { background-image: url('img/banner2.png'); position: relative; }
+.banner-right { background-image: url('img/banner3.png'); }
 .banner-center .overlay {
   position: absolute;
   top: 50%; left: 50%; transform: translate(-50%, -50%);
@@ -129,7 +129,7 @@ body {
 .intro-secondary-img { width: 100%; height: auto; border-radius: 6px; }
 
 /* ======================================================
-   5) PAGINA 2 – second.html
+   5) PAGINA 2 - second.html
    ====================================================== */
 .services-header {
   background-color: #C0D8B0;
@@ -185,7 +185,7 @@ body {
 }
 
 /* ======================================================
-   6) PAGINA 3 – final.html
+   6) PAGINA 3 - final.html
    ====================================================== */
 .recipes {
   display: flex;
@@ -276,7 +276,7 @@ body {
 }
 
 /* ======================================================
-   9) RESPONSIVITÀ
+   9) RESPONSIVITA
    ====================================================== */
 @media (min-width: 901px) and (max-width: 1400px) {
   .intro {
@@ -296,18 +296,18 @@ body {
   }
 }
 @media (max-width: 900px) {
-  /* Intro: due colonne → singola colonna */
+  /* Intro: due colonne -> singola colonna */
   .intro { flex-direction: column; }
 
   /* Servizi: ogni service-item → colonna singola */
   .service-item { flex-direction: column; }
   .service-info, .service-image { flex: 1 1 100%; }
 
-  /* Ricette: due colonne → singola colonna */
+  /* Ricette: due colonne -> singola colonna */
   .recipes { flex-direction: column; }
   .recipes-left, .recipes-right { flex: 1 1 100%; }
 
-  /* Dove trovarmi: due colonne → singola colonna */
+  /* Dove trovarmi: due colonne -> singola colonna */
   .location-section { flex-direction: column; }
   .location-left, .location-right { flex: 1 1 100%; }
 }
