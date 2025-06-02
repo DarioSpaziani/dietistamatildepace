@@ -262,7 +262,8 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
-.icon-item img { width: clamp(40px, 5vw, 60px); height: auto; }
+.icon-item img { width: clamp(40px, 5vw, 60px); height: auto; transition: transform 0.3s ease;}
+.icon-item img:hover{ transform: scale(1.1);}
 .icon-item span { font-size: clamp(0.9rem, 1vw, 1rem); color: #333; }
 
 /* ======================================================
