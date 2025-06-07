@@ -99,7 +99,7 @@ body {
 .intro-secondary-img { width: 100%; height: auto; border-radius: 6px; }
 
 /* ======================================================
-   5) PAGINA 2 – second.html
+   5) PAGINA 2 - second.html
    ====================================================== */
 
 /* 5.1 Sezione servizi */
@@ -167,7 +167,7 @@ body {
 
 
 /* ======================================================
-   6) PAGINA 3 – final.html
+   6) PAGINA 3 - final.html
    ====================================================== */
 
 
@@ -234,7 +234,7 @@ body {
 }
 
 /* ======================================================
-   7) RESPONSIVITÀ
+   7) RESPONSIVITA'
    ====================================================== */
 @media (min-width: 901px) and (max-width: 1400px) {
   .intro {
@@ -283,7 +283,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Responsività: su mobile le immagini diventano 100% larghezza (una sotto l’altra) */
+/* Responsivita */
 @media (max-width: 600px) {
   .recipes-gallery img {
     flex: 1 1 100%;
